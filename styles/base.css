@@ -26,7 +26,7 @@ body{
 
 .footer {
     background-color: #114c50;
-    color: #ffffff;
+    color: #552f2f;
     text-align: center;
     padding: 1rem;
     border-radius: 1rem;
@@ -38,5 +38,5 @@ body{
 }
 
 .last-update {
-    color: gold;
+    color: yellow;
 }
