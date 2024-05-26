@@ -16,7 +16,11 @@ button.addEventListener("click", ()=>{
 
     li.append(button);
     list.append(li);
+	input.focus();
+	input.value=''
     button.addEventListener("click",()=>{
         list.removeChild(li);
+		input.focus();
+		input.value=''
     })
 })
