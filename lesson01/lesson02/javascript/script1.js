@@ -1,0 +1,2 @@
+document.getElementById("last_update").innerHTML = `Last Updated: ${document.lastModified}`
+document.getElementById("copy_right").innerHTML = ` &copy; ${new Date().getFullYear()} wdd230 - Aluko Akinlolu`;
