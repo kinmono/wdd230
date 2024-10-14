@@ -10,6 +10,7 @@ body {
 }
 
 header,
+nav,
 main,
 footer {
   margin: 0 auto;
@@ -18,7 +19,8 @@ footer {
 }
 
 header,
-footer {
+footer,
+main h3 {
   background-color: #02213b;
   color: white;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.253);
@@ -50,4 +52,8 @@ header img {
 
 main {
   padding: 10px;
+}
+main h3 {
+  padding: 1rem;
+  border-radius: 6px;
 }
