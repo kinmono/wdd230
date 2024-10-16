@@ -10,6 +10,12 @@
   header {
     margin-top: 10px;
   }
+  nav {
+    display: block;
+    margin: 0 auto;
+    padding: 0.75rem;
+    max-width: 45rem;
+  }
 
   header,
   footer {
@@ -19,8 +25,20 @@
   header img {
     box-shadow: 0 0 30px #444;
     border-radius: 0 10px 0 0;
-    float: right;
+    float: left;
     width: 50px;
   }
-  
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  main > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  }
+  #menuBtn {
+    display: none;
+  }
 }

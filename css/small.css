@@ -10,7 +10,6 @@ body {
 }
 
 header,
-nav,
 main,
 footer {
   margin: 0 auto;
@@ -26,7 +25,9 @@ main h3 {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.253);
   text-align: center;
 }
-
+header {
+  position: relative;
+}
 header h1 {
   font-size: 1.5rem;
   margin: 20px;
@@ -46,8 +47,9 @@ footer a {
 }
 
 header img {
-  width: 200px;
+  width: 50px;
   height: auto;
+  float: left;
 }
 
 main {
@@ -56,4 +58,65 @@ main {
 main h3 {
   padding: 1rem;
   border-radius: 6px;
+}
+nav {
+  background-color: black;
+  display: none;
+}
+
+#menuBtn {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  color: white;
+}
+
+#menuBtn::before {
+  content: "≡  ";
+}
+
+nav ul {
+  list-style-type: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav ul > li {
+  list-style: none;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+section > p {
+  text-align: center;
+}
+
+.show {
+  margin: 0 auto;
+  padding: 0.75rem;
+  max-width: 45rem;
+  display: block;
+}
+#menuBtn.show::before {
+  content: "X";
+  color: red;
+}
+
+section {
+  box-shadow: 0 0 30px #444;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+#menu li > a:hover {
+  color: yellowgreen;
+}
+.active {
+  color: goldenrod;
 }
