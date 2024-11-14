@@ -60,6 +60,9 @@ main h3 {
   padding: 1rem;
   border-radius: 6px;
 }
+main > div {
+  margin-bottom: 10px;
+}
 nav {
   background-color: black;
   display: none;
