@@ -1,6 +1,6 @@
 // Get Current Weather
 const requestUrl =
-  "https://api.openweathermap.org/data/2.5/onecall?lat=6.797160&lon=3.975647&exclude=minutely,hourly&units=imperial&appid=11f9be110b488889077df997d7a7dcfc";
+  "https://api.openweathermap.org/data/2.5/onecall?lat=6.797160&lon=3.975647&exclude=minutely,hourly&units=imperial&appid=7a24f23ff0f6ddd9ae6572431e5df1b0";
 
 fetch(requestUrl)
   .then((response) => response.json())

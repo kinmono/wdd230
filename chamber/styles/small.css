@@ -359,7 +359,19 @@ h4 {
   max-height: 300px;
   object-fit: cover;
 }
-
+#lastvisit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 60px;
+  background-color: black;
+  margin-top: -1%;
+  color: white;
+  text-align: center;
+  z-index: 100;
+  font-size: 1rem;
+}
 #summary > div {
   border: 1px solid rgba(204, 204, 204, 0.241);
   border-radius: 4px;
