@@ -372,7 +372,7 @@ h4 {
   z-index: 100;
   font-size: 1rem;
 }
-#summary > div {
+#summary > section {
   border: 1px solid rgba(204, 204, 204, 0.241);
   border-radius: 4px;
   background-color: #00263a9d;
@@ -385,7 +385,12 @@ h4 {
   left: 2%;
   font-size: 0.8rem;
 }
-
+#summary > section > hr {
+  width: 100%;
+  color: white;
+  border: 1px solid white;
+  margin-bottom: 0.5rem;
+}
 /* About */
 #about {
   line-height: 1.5;
