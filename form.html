@@ -46,13 +46,73 @@
 
     <!-- CONTENT HERE -->
     <main>
-      <div>
-        Displaying the values submitted from the form is not required on the
-        record.html page. To properly display the values submitted from an HTML
-        form on the action page, we would need to use server-side programming
-        languages or other backend technology frameworks to process the form
-        data and generate the desired output.
-      </div>
+      <form action="record.html" method="get">
+        <fieldset>
+          <legend>Sign Up Information</legend>
+          <label class="top"
+            >Username*
+            <input type="text" name="username" required id="username"
+          /></label>
+          <label class="top"
+            >Password*
+            <input
+              id="password"
+              type="password"
+              name="password"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          /></label>
+          <label class="top"
+            >Re-enter Password*
+            <input
+              type="password"
+              name="password"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              id="cpassword"
+          /></label>
+          <div id="formmessage"></div>
+          <label class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              title="the title will supplement the error message and support mouse over messaging.
+              e.g., 'A valid byui.edu email address.'"
+          /></label>
+          <label for="r" class="new"
+            >Page Rating <br />
+
+            <input
+              type="range"
+              id="r"
+              name="r"
+              min="1"
+              max="10"
+              value="0"
+              step="1"
+              list="rangevalues"
+          /></label>
+          <datalist id="rangevalues">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </datalist>
+        </fieldset>
+
+        <input class="submitBtn" type="submit" value="Sign up" />
+      </form>
     </main>
 
     <!-- FOOTER HERE -->
