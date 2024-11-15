@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="WDD 230: Web Frontend Development Assignment portal for Akinlolu Aluko at Brigham Young University - Idaho" />
+    <!--  Essential META Tags -->
+    <meta
+      property="og:title"
+      content="WDD 230: Web Frontend Development Assignment portal for Akinlolu Aluko at Brigham Young University - Idaho" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://kinmono.github.io/wdd230/images/profile_pic.jpg" />
+    <meta property="og:url" content="https://kinmono.github.io/wdd230/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!--  Non-Essential, But Recommended -->
+    <meta
+      property="og:description"
+      content="Offering tour packages for individuals or groups." />
+    <meta property="og:site_name" content="Akinlolu Aluko wdd2230" />
+    <meta name="twitter:image:alt" content="Alt text for image" />
+
+    <!--  Non-Essential, But Required for Analytics -->
+    <meta property="fb:app_id" content="your_app_id" />
+    <meta name="twitter:site" content="@website-username" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="css/form.css" rel="stylesheet" />
+    <title>Akinlolu Aluko - WDD 230 - Web Frontend Development</title>
+    <!-- enhance-tablet -->
+  </head>
+  <body>
+    <!-- HEADER HERE -->
+    <header>
+      <h1>Sign Up Form</h1>
+      <h2>Designing Web Forms</h2>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+
+    <!-- CONTENT HERE -->
+    <main>
+      <form action="record.html" method="get">
+        <fieldset>
+          <legend>Sign Up Information</legend>
+          <label class="top"
+            >Username*
+            <input type="text" name="username" required id="username"
+          /></label>
+          <label class="top"
+            >Password*
+            <input
+              id="password"
+              type="password"
+              name="password"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          /></label>
+          <label class="top"
+            >Re-enter Password*
+            <input
+              type="password"
+              name="password"
+              required
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              id="cpassword"
+          /></label>
+          <div id="formmessage"></div>
+          <label class="top"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="someone@gmail.com"
+              required
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              title="the title will supplement the error message and support mouse over messaging.
+              e.g., 'A valid byui.edu email address.'"
+          /></label>
+          <label for="r" class="new"
+            >Page Rating <br />
+
+            <input
+              type="range"
+              id="r"
+              name="r"
+              min="1"
+              max="10"
+              value="0"
+              step="1"
+              list="rangevalues"
+          /></label>
+          <datalist id="rangevalues">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </datalist>
+        </fieldset>
+
+        <input class="submitBtn" type="submit" value="Sign up" />
+      </form>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>&copy; 2018 &bull; Paul Cheney &bull; 123-555-6789</footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
