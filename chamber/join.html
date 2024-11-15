@@ -87,15 +87,15 @@
               <legend>Your Information</legend>
               <label class="top">
                 First name
-                <input type="text" name="firstname" required />
+                <input type="text" name="firstname" required id="firstname" />
               </label>
               <label class="top">
                 Last name
-                <input type="text" name="lastname" required />
+                <input type="text" name="lastname" required id="lastname" />
               </label>
               <label class="top">
                 Title
-                <input type="text" name="title" />
+                <input type="text" name="title" id="title" />
               </label>
               <label class="top">
                 Email
@@ -103,11 +103,12 @@
                   type="email"
                   name="email"
                   placeholder="username@domain.com"
+                  id="email"
                   required />
               </label>
               <label class="top">
                 Phone number
-                <input type="tel" name="phone" />
+                <input type="tel" name="phone" id="phone" />
               </label>
               <input type="hidden" name="date" id="date" />
             </fieldset>
