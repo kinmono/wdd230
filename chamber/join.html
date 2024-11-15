@@ -23,9 +23,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet" /> -->
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
@@ -82,7 +82,7 @@
       <section id="contact">
         <h2>Please Fill the form below</h2>
         <div>
-          <form action="thankyou.html">
+          <form action="thankyou.html" method="get">
             <fieldset>
               <legend>Your Information</legend>
               <label class="top">
@@ -109,6 +109,7 @@
                 Phone number
                 <input type="tel" name="phone" />
               </label>
+              <input type="hidden" name="date" id="date" />
             </fieldset>
             <fieldset>
               <legend>Business Information</legend>
