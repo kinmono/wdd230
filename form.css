@@ -133,7 +133,6 @@ form div {
 
 form label.top input,
 form label.top select {
-  -webkit-appearance: none;
   display: block;
   font-size: 1rem;
   border: 1px solid #999;
