@@ -124,3 +124,22 @@ section {
 .active {
   color: goldenrod;
 }
+#r {
+  width: 180px;
+  margin-bottom: 0;
+}
+
+#rangevalue {
+  font-size: 2rem;
+  color: navy;
+}
+
+#rangevalues {
+  display: flex;
+  margin: 0 0 0 25px;
+  width: 200px;
+}
+
+#rangevalues option {
+  flex: 1 1 auto;
+}
