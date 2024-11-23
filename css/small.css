@@ -143,3 +143,20 @@ section {
 #rangevalues option {
   flex: 1 1 auto;
 }
+
+.weather-card {
+  width: 300px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.weather-card img {
+  width: 80px;
+  height: 80px;
+}
+.weather-card p {
+  margin: 10px 0;
+  font-size: 16px;
+}
