@@ -1,4 +1,4 @@
-const directoryPath = "data/directory.json";
+const directoryPath = "https://kinmono.github.io/wdd230/data/directory.json";
 
 fetch(directoryPath)
   .then((response) => response.json())
