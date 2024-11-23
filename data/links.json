@@ -14,11 +14,38 @@
       ]
     },
     {
-      "lesson": "02",
+      "lesson": "03",
       "links": [
         {
-          "url": "lesson02/mediaquery.html",
-          "title": "Media Queries"
+          "url": "lesson03/chamber-site-plan.html",
+          "title": "Chamber Site plan"
+        }
+      ]
+    },
+    {
+      "lesson": "04",
+      "links": [
+        {
+          "url": "chamber/",
+          "title": "Chamber homepage"
+        }
+      ]
+    },
+    {
+      "lesson": "05",
+      "links": [
+        {
+          "url": "lesson05/bom.html",
+          "title": "Book of Mormon"
+        }
+      ]
+    },
+    {
+      "lesson": "06",
+      "links": [
+        {
+          "url": "lesson6/preston.html",
+          "title": "Responsive Images"
         },
         {
           "url": "lesson02/design-principles.html",
@@ -27,85 +54,38 @@
       ]
     },
     {
-      "lesson": "02",
+      "lesson": "07",
       "links": [
         {
-          "url": "lesson02/mediaquery.html",
-          "title": "Media Queries"
+          "url": "lesson07/lazyload.html",
+          "title": "Progressive Loading of Image"
         },
         {
-          "url": "lesson02/design-principles.html",
-          "title": "Design Principles Document"
+          "url": "lesson07/bom.html",
+          "title": "Bom"
         }
       ]
     },
     {
-      "lesson": "02",
+      "lesson": "08",
       "links": [
         {
           "url": "lesson02/mediaquery.html",
           "title": "Media Queries"
-        },
-        {
-          "url": "lesson02/design-principles.html",
-          "title": "Design Principles Document"
         }
       ]
     },
     {
-      "lesson": "02",
+      "lesson": "09",
       "links": [
         {
-          "url": "lesson02/mediaquery.html",
-          "title": "Media Queries"
-        },
-        {
-          "url": "lesson02/design-principles.html",
-          "title": "Design Principles Document"
+          "url": "lesson09/prophets.html",
+          "title": "Prophet"
         }
       ]
     },
     {
-      "lesson": "02",
-      "links": [
-        {
-          "url": "lesson02/mediaquery.html",
-          "title": "Media Queries"
-        },
-        {
-          "url": "lesson02/design-principles.html",
-          "title": "Design Principles Document"
-        }
-      ]
-    },
-    {
-      "lesson": "02",
-      "links": [
-        {
-          "url": "lesson02/mediaquery.html",
-          "title": "Media Queries"
-        },
-        {
-          "url": "lesson02/design-principles.html",
-          "title": "Design Principles Document"
-        }
-      ]
-    },
-    {
-      "lesson": "02",
-      "links": [
-        {
-          "url": "lesson02/mediaquery.html",
-          "title": "Media Queries"
-        },
-        {
-          "url": "lesson02/design-principles.html",
-          "title": "Design Principles Document"
-        }
-      ]
-    },
-    {
-      "lesson": "02",
+      "lesson": "10",
       "links": [
         {
           "url": "lesson02/mediaquery.html",
