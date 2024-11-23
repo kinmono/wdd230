@@ -1,4 +1,4 @@
-const baseURL = "../data/links.json";
+const baseURL = "https://kinmono.github.io/wdd230/data/links.json";
 const list = document.getElementById("list");
 
 async function getData(URL) {
