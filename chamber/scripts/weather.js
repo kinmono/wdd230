@@ -1,27 +1,31 @@
 // Get Current Weather
+async function getWeather() {
+  const res = await fetch(
+    "https://api.openweathermap.org/data/2.5/weather?lat=6.632192667531344&lon=3.3806072978815394&appid=7a24f23ff0f6ddd9ae6572431e5df1b0&units=imperial"
+  );
+  const data = await res.json();
+  const temp = data.main.temp;
+  const desc = data.weather[0].description;
+  const icon = data.weather[0].icon;
+
+  document.getElementById("desc").textContent = desc;
+  document.getElementById("temp").textContent = temp + "\xB0F";
+
+  document.getElementById("humidity").textContent = data.main.humidity;
+  document.getElementById("windSpeed").textContent = data.wind.speed;
+}
+
+getWeather();
+
 const requestUrl =
-  "https://api.openweathermap.org/data/2.5/onecall?lat=6.797160&lon=3.975647&exclude=minutely,hourly&units=imperial&appid=7a24f23ff0f6ddd9ae6572431e5df1b0";
+  "https://api.openweathermap.org/data/2.5/forecast?lat=6.632192667531344&lon=3.3806072978815394&appid=7a24f23ff0f6ddd9ae6572431e5df1b0&units=imperial";
 
 fetch(requestUrl)
   .then((response) => response.json())
   .then((jsonObject) => {
-    const currentWeather = jsonObject.current;
-    const dailyForecast = jsonObject.daily.slice(0, 3);
-    alerts = jsonObject.alerts;
-
+    const dailyForecast = jsonObject.list.slice(1, 4);
     // Update only Homepage
-
-    document.getElementById("desc").textContent =
-      currentWeather.weather[0].description;
-    document.getElementById("temp").textContent = currentWeather.temp + "\xB0F";
-
-    document.getElementById("humidity").textContent = currentWeather.humidity;
-    document.getElementById("windSpeed").textContent =
-      currentWeather.wind_speed;
-
-    // Check for alerts
-    handleAlerts();
-
+    console.log("dailllly: ", dailyForecast);
     // Weather Forecast
     const d = new Date();
 
@@ -57,12 +61,13 @@ fetch(requestUrl)
       icon.alt = weather.weather[0].description;
 
       const temp = document.createElement("p");
-      temp.textContent = weather.temp.day + "\xB0F";
+      temp.textContent = weather.main.temp + "\xB0F";
 
       forecastItem.appendChild(dayName);
       forecastItem.appendChild(icon);
       forecastItem.appendChild(temp);
 
+      console.log("forcast: ", forecastItem);
       document.querySelector(".forecast-box").appendChild(forecastItem);
     });
   });
