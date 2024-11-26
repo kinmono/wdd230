@@ -71,3 +71,35 @@ fetch(requestUrl)
       document.querySelector(".forecast-box").appendChild(forecastItem);
     });
   });
+
+//modal
+
+// Get the current day of the week
+const dayOfWeek = new Date().getDay(); // Sunday is 0, Monday is 1, ..., Saturday is 6
+
+// Days when the modal should show (Monday = 1, Tuesday = 2, Wednesday = 3)
+const showModalDays = [1, 2, 3];
+
+// Get the modal and close button elements
+const modal = document.getElementById("modal");
+const closeButton = document.querySelector(".close-btn");
+
+// Show the modal if today is in the allowed days
+if (showModalDays.includes(dayOfWeek)) {
+  modal.style.display = "flex"; // Show the modal (flex for centering)
+}
+
+// Close the modal when the close button is clicked
+closeButton.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+modal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+// Close the modal if the user clicks outside the modal content
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
