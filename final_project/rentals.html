@@ -80,266 +80,95 @@
             src="https://img.freepik.com/premium-photo/young-woman-dressed-white-riding-scooter_926199-2218855.jpg"
             alt="Franklin" />
         </picture>
-        <h1>Join Us Today!</h1>
+        <h1>Rentals</h1>
       </div>
-      <div class="reserve">
-        <h3>Please Fill the Reservations form below</h3>
-        <div class="cardr">
-          <div class="card-item">
-            <form id="application" action="confirm.html" method="get">
-              <h4>Application Form</h4>
-              <fieldset>
-                <legend>Personal Details</legend>
-                <label for="fname">Name</label>
-                <input
-                  name="name"
-                  id="fname"
-                  placeholder="Full name"
-                  required
-                  autocomplete="name" />
-
-                <label for="frmAddressS">Address</label>
-                <input
-                  name="ship-address"
-                  id="frmAddressS"
-                  placeholder="123 Any Street"
-                  autocomplete="shipping street-address"
-                  required />
-
-                <label for="frmCityS">City</label>
-                <input
-                  name="ship-city"
-                  id="frmCityS"
-                  placeholder="New York"
-                  autocomplete="shipping locality"
-                  required />
-
-                <label for="frmStateS">State</label>
-                <input
-                  name="ship-state"
-                  id="frmStateS"
-                  placeholder="NY"
-                  autocomplete="shipping region"
-                  required />
-
-                <label for="frmZipS">Zip</label>
-                <input
-                  name="ship-zip"
-                  id="frmZipS"
-                  placeholder="#####"
-                  autocomplete="shipping postal-code"
-                  required />
-
-                <label for="frmCountryS">Country</label>
-                <input
-                  name="ship-country"
-                  id="frmCountryS"
-                  placeholder="USA"
-                  autocomplete="shipping country"
-                  required />
-
-                <label for="frmPhoneNumA">Phone</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="frmPhoneNumA"
-                  placeholder="+1-650-450-1212"
-                  autocomplete="tel"
-                  required />
-
-                <label for="frmEmailA">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="frmEmailA"
-                  placeholder="from@somewhere.com"
-                  autocomplete="email"
-                  required />
-              </fieldset>
-
-              <fieldset>
-                <legend>Rentals Details</legend>
-                <label for="pickupLocation">Pick-up Location: </label>
-                <select id="pickupLocation" name="pickupLocation" required>
-                  <option value="none" selected disabled>
-                    Please Select a Location
-                  </option>
-                  <option value="sanMiguel">~Scoots: San Miguel</option>
-                  <option value="quintanaRoo">~Scoots: Quintana Roo</option>
-                </select>
-
-                <label for="pickupDate">Pick-up Date:</label>
-                <input id="pickupDate" name="pickupDate" type="date" required />
-
-                <label for="pickupTime">Pick-up Time: Between 7AM - 9PM</label>
-                <input
-                  id="pickupTime"
-                  name="pickupTime"
-                  type="time"
-                  step="60"
-                  value="07:00"
-                  min="07:00:00"
-                  max="21:00:00"
-                  required />
-
-                <label for="dropoffLocation">Drop-off Location: </label>
-                <select
-                  id="dropoffLocation"
-                  class="scoots"
-                  name="dropoffLocation"
-                  required>
-                  <option value="none" selected disabled>
-                    Please Select a Location
-                  </option>
-                  <option value="sanMiguel">~Scoots: San Miguel</option>
-                  <option value="quintanaRoo">~Scoots: Quintana Roo</option>
-                </select>
-
-                <label for="dropoffDate">Drop-off Date:</label>
-                <input
-                  id="dropoffDate"
-                  name="dropoffDate"
-                  type="date"
-                  required />
-
-                <label for="dropoffTime"
-                  >Drop-off Time: Between 7AM - 9PM</label
-                >
-                <input
-                  id="dropoffTime"
-                  name="dropoffTime"
-                  type="time"
-                  step="60"
-                  value="07:00"
-                  min="07:00:00"
-                  max="21:00:00"
-                  required />
-
-                <label for="rental_0">Rental Type:</label>
-                <select
-                  id="rental_0"
-                  name="rental_0"
-                  onchange="calculateCost();"
-                  required></select>
-
-                <div class="center">
-                  <div class="button inline">
-                    <button class="" type="button" onclick="addRental(this);">
-                      Add Another Vehicle
-                    </button>
-                  </div>
-                  <div class="button inline">
-                    <button
-                      class="inline"
-                      type="button"
-                      onclick="removeRental(this);">
-                      Remove Vehicle
-                    </button>
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset>
-                <legend>Card Details</legend>
-                <label for="frmNameCC">Name on card</label>
-                <input
-                  name="ccname"
-                  id="frmNameCC"
-                  placeholder="Full Name"
-                  autocomplete="cc-name"
-                  required />
-
-                <label for="frmCCNum">Card Number</label>
-                <input
-                  name="cardnumber"
-                  id="frmCCNum"
-                  placeholder="#### #### #### ####"
-                  autocomplete="cc-number"
-                  required />
-
-                <label for="frmCCCVC">CVC</label>
-                <input
-                  name="cvc"
-                  id="frmCCCVC"
-                  autocomplete="cc-csc"
-                  required />
-
-                <label for="frmCCExp">Expiry</label>
-                <input
-                  name="cc-exp"
-                  id="frmCCExp"
-                  placeholder="MM-YYYY"
-                  autocomplete="cc-exp"
-                  required />
-              </fieldset>
-              <fieldset>
-                <legend>Other Details</legend>
-                <label for="cruise">Cruiseline: If Applicable</label>
-                <input id="cruise" name="cruise" type="text" />
-
-                <label for="accomidations"
-                  >Special Accomidations/Comments:</label
-                >
-                <textarea id="accomidations" name="accomidations"></textarea>
-              </fieldset>
-
-              <label for="terms" class="terms"
-                ><input id="terms" name="terms" type="checkbox" required />
-                <i
-                  >I have read the
-                  <a href="termsOfService.html" target="_blank" rel="noreferrer"
-                    >Terms and Service Agreement</a
-                  >
-                  and agree.</i
-                ></label
-              >
-              <label for="conditions">
-                <i>
-                  I understand the following points:<br />
-                  <ul>
-                    <li>
-                      A $50 security deposit is required to confirm
-                      reservations.
-                    </li>
-                    <li>
-                      A valid drivers license is required in hand at time of
-                      rental.
-                    </li>
-                    <li>
-                      No one under 12 years of age are allowed to ride on the
-                      scooters.
-                    </li>
-                    <li>Fuel charge not included.</li>
-                    <li>Unlimited mileage is included.</li>
-                    <li>Liability insurance is free of charge.</li>
-                    <li>
-                      Reservations rate requires 24 hour prior notification and
-                      will be discounted when pickup is made.
-                    </li>
-                    <li>
-                      Free delivery to Cozumel hotel, Airbnb, or private
-                      residence for 2+ day rentals.
-                    </li>
-                    <li>
-                      Payment can be made via Google Pay, cash, credit card,
-                      debit card, or PayPal.
-                    </li>
-                    <li>Rentals may be returned to either location.</li>
-                  </ul>
-                </i>
-              </label>
-
-              <input id="total" name="total" type="hidden" value="0" />
-              <div>
-                <h4>Reservation Cost</h4>
-                <div id="costDiv" class="text">$50.00 - Security Deposit</div>
-              </div>
-              <div class="button">
-                <button type="submit">Make Your Reservation Now</button>
-              </div>
-            </form>
-          </div>
+      <div class="rent">
+        <div>
+          <h3>Rentals</h3>
+          <div id="rentals" class="rental-container"></div>
         </div>
       </div>
+      <div class="paralax"></div>
+      <div class="table">
+        <div>
+          <h3>At a Glance</h3>
+          <div id="rentalTable" class="card-table"></div>
+        </div>
+      </div>
+      <div class="paralax"></div>
     </main>
+    <footer>
+      <section id="contact">
+        <div>
+          <h2>Contact Information</h2>
+          <div>
+            <div>
+              <h3>Address</h3>
+              <p>
+                The WeatherTour Center <br />
+                123 Main Street <br />
+                franklin, ID 83263
+              </p>
+            </div>
+            <div class="contacts">
+              <h3>Phone:</h3>
+              <p>
+                <img src="images/phone-call.svg" alt="phone" /><a
+                  href="tel:+1234456890"
+                  >+1 234 456 890</a
+                >
+              </p>
+              <h3>Email:</h3>
+              <p>
+                <img src="images/envelope.svg" alt="mail" /><a
+                  href="mailto:hello@weathertour.com"
+                  >hello@weathertour.com</a
+                >
+              </p>
+              <ul class="social">
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="images/facebook.svg" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="images/linkedin.svg" alt="linkedin"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- <img src="images/map.png" alt="Map" /> -->
+      </section>
+
+      <section id="copyright">
+        <p>
+          &copy; The Scooter Site <br />Images by
+          <a href="https://picsum.photos">Lorem Picsum</a>, Icons made by
+          <a href="https://www.flaticon.com/authors/iconixar" title="iconixar"
+            >iconixar</a
+          >
+          from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+        </p>
+        <p>Akinlolu Aluko | <span id="currentDate">202x</span>&nbsp;</p>
+      </section>
+    </footer>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts//vehicles.js"></script>
   </body>
 </html>

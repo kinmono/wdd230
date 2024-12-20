@@ -61,4 +61,39 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .table {
+    display: block;
+    color: rgb(0, 0, 0);
+  }
+  .card-table {
+    background-color: #caf0f8;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  table {
+    border-radius: 10px;
+  }
+  thead th,
+  tbody td {
+    padding: 8px;
+  }
+  .rental-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .card-rental {
+    padding: 2rem;
+    background-color: #6480a6;
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 6px;
+    min-height: 700px;
+  }
 }
