@@ -1,0 +1,20 @@
+@media only screen and (min-width: 64rem) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    padding: 50px;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .hero img {
+    max-width: 50%;
+    border-radius: 10px;
+    margin-left: 30px;
+  }
+  form {
+    width: 50vw;
+  }
+}

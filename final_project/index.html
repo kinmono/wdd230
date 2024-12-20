@@ -35,116 +35,256 @@
   </head>
 
   <body>
-    <!-- Banner -->
-    <aside id="banner">
-      <!-- banner text here -->
-      <p id="closeBanner">&times;</p>
-    </aside>
-    <!-- Header -->
-    <header class="large">
-      <div class="secondHeader">
+    <header>
+      <nav class="navbar">
         <div class="logo">
-          <a href="final_project/"
-            ><img
-              src="/WGIA-SVG.svg"
-              alt="WGIA-SVG Logo"
-              width="72"
-              height="16"
-          /></a>
+          <a href="#">MyWebsite</a>
         </div>
-
-        <!-- Navigation -->
-        <nav id="menu">
-          <ul class="{Style.mainmenu}" data-visible="{toggle.toggle}">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/categories/technews">Tech & Business</a>
-            </li>
-            <li>
-              <a href="/categories/product">Product</a>
-            </li>
-            <li>
-              <a href="/categories/achievements">Achievements</a>
-            </li>
-            <li>
-              <a href="/categories/entertainment">Entertainment</a>
-            </li>
-            <li>
-              <a href="/categories/tourism">Tourism</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <ul class="nav-links">
+          <li><a href="/final_project/" class="active">Home</a></li>
+          <li><a href="/final_project/reservation.html">Reservation</a></li>
+          <li><a href="/final_project/rentals.html">Rentals</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
 
     <!-- Content -->
-    <main></main>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Ride the Future</h1>
+          <p>
+            Rent a scooter today and explore the city with ease, style, and
+            affordability.
+          </p>
+          <a href="#rent" class="btn">Make a Reservation Today!</a>
+        </div>
+      </section>
+      <section id="summary">
+        <!-- <img src="images/hero.jpg" alt="" /> -->
+        <picture>
+          <source
+            media="(max-width: 500px)"
+            srcset="
+              https://cdn.bikedekho.com/processedimages/honda/activa-6g/source/activa-6g65e80a97062a4.jpg
+            " />
+          <source
+            media="(max-width: 800px)"
+            srcset="
+              https://cdn.bikedekho.com/processedimages/honda/activa-6g/source/activa-6g65e80a97062a4.jpg
+            " />
+          <source
+            media="(max-width: 1024px)"
+            srcset="
+              https://cdn.bikedekho.com/processedimages/honda/activa-6g/source/activa-6g65e80a97062a4.jpg
+            " />
+          <img
+            src="https://cdn.bikedekho.com/processedimages/honda/activa-6g/source/activa-6g65e80a97062a4.jpg"
+            alt="franklin" />
+        </picture>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Weather Summary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Currently:</td>
+              <td id="desc">...</td>
+            </tr>
+            <tr>
+              <td>High:</td>
+              <td><span id="temp">...</span>&deg;F</td>
+            </tr>
+            <tr>
+              <td>Wind Chill:</td>
+              <td><span id="windchill">N/A</span></td>
+            </tr>
+            <tr>
+              <td>Humidity:</td>
+              <td><span id="humidity">...</span>%</td>
+            </tr>
+            <tr>
+              <td>Wind Speed:</td>
+              <td><span id="windspeed">...</span>mph</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="home_card">
+        <div class="card">
+          <div class="card_title">Trial</div>
+          <div class="card_description">
+            Consultation session with expert, providing targeted insights and
+            recommendations to enhance your product.
+          </div>
+          <ul class="Section4_bulletPoints__AQ1eA">
+            <li class="flex justify-left" style="color: rgb(204, 204, 204)">
+              <img
+                src="/icons/home/section2/CardTickMark.svg"
+                alt="Tick Mark"
+                class="mr-2 mt-[0.20rem] w-[0.85rem] h-4" />Consultations
+            </li>
+            <li class="flex justify-left">
+              <img
+                src="/icons/home/section4/cross.svg"
+                alt="Home"
+                class="undefined h-3 w-3 mr-2 mt-[0.30rem]" />MVP
+            </li>
+            <li class="flex justify-left">
+              <img
+                src="/icons/home/section4/cross.svg"
+                alt="Home"
+                class="undefined h-3 w-3 mr-2 mt-[0.30rem]" />Final Product
+            </li>
+          </ul>
+          <a href="/contact"><button class="card_button">Contact Us</button></a>
+        </div>
+        <div class="card">
+          <div class="card_title">Trial</div>
+          <div class="card_description">
+            Consultation session with expert, providing targeted insights and
+            recommendations to enhance your product.
+          </div>
+          <ul class="Section4_bulletPoints__AQ1eA">
+            <li class="flex justify-left" style="color: rgb(204, 204, 204)">
+              <img
+                src="/icons/home/section2/CardTickMark.svg"
+                alt="Tick Mark"
+                class="mr-2 mt-[0.20rem] w-[0.85rem] h-4" />Consultations
+            </li>
+            <li class="flex justify-left">
+              <img
+                src="/icons/home/section4/cross.svg"
+                alt="Home"
+                class="undefined h-3 w-3 mr-2 mt-[0.30rem]" />MVP
+            </li>
+            <li class="flex justify-left">
+              <img
+                src="/icons/home/section4/cross.svg"
+                alt="Home"
+                class="undefined h-3 w-3 mr-2 mt-[0.30rem]" />Final Product
+            </li>
+          </ul>
+          <a href="/contact"><button class="card_button">Contact Us</button></a>
+        </div>
+        <div class="card">
+          <div class="card_title">Trial</div>
+          <div class="card_description">
+            Consultation session with expert, providing targeted insights and
+            recommendations to enhance your product.
+          </div>
+          <ul class="Section4_bulletPoints__AQ1eA">
+            <li class="flex justify-left" style="color: rgb(204, 204, 204)">
+              <img
+                src="/icons/home/section2/CardTickMark.svg"
+                alt="Tick Mark"
+                class="mr-2 mt-[0.20rem] w-[0.85rem] h-4" />Consultations
+            </li>
+            <li class="flex justify-left">
+              <img
+                src="/icons/home/section4/cross.svg"
+                alt="Home"
+                class="undefined h-3 w-3 mr-2 mt-[0.30rem]" />MVP
+            </li>
+            <li class="flex justify-left">
+              <img
+                src="/icons/home/section4/cross.svg"
+                alt="Home"
+                class="undefined h-3 w-3 mr-2 mt-[0.30rem]" />Final Product
+            </li>
+          </ul>
+          <a href="/contact"><button class="card_button">Contact Us</button></a>
+        </div>
+      </section>
+    </main>
 
     <footer>
-      <div class="top">
-        <div class="about-us">
-          <img src="images/logo.png" alt="logo" />
-          <p>
-            We are proudly accountable to a better way of doing business. We
-            actively pursue the wellbeing of staff, communities and environment
-            and help the businesses we work with do so as well.
-          </p>
-        </div>
+      <section id="contact">
         <div>
-          <a href="//google.com">
-            1 Idona Street <br />
-            Opposite Eye Foundation Center <br />
-            Ijebu-imushin <br />
-            Ogun.
-          </a>
+          <h2>Contact Information</h2>
+          <div>
+            <div>
+              <h3>Address</h3>
+              <p>
+                The WeatherTour Center <br />
+                123 Main Street <br />
+                franklin, ID 83263
+              </p>
+            </div>
+            <div class="contacts">
+              <h3>Phone:</h3>
+              <p>
+                <img src="images/phone-call.svg" alt="phone" /><a
+                  href="tel:+1234456890"
+                  >+1 234 456 890</a
+                >
+              </p>
+              <h3>Email:</h3>
+              <p>
+                <img src="images/envelope.svg" alt="mail" /><a
+                  href="mailto:hello@weathertour.com"
+                  >hello@weathertour.com</a
+                >
+              </p>
+              <ul class="social">
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="images/facebook.svg" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="images/linkedin.svg" alt="linkedin"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="images/twitter.svg" alt="twitter"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://facebook.com"
+                    ><img src="images/instagram.svg" alt="instagram"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <a href="contact.html">Contact Us</a> <br />
-          <a href="tel:+2348108156732">(234) 813 815 6732</a> <br />
-          <a href="mailto:donsoj1st@gmail.com">donsoj1st@gmail.com</a>
-        </div>
-        <div>
-          <h4>Follow us</h4>
-          <ul>
-            <li><a href="//facebook.com/">FB</a></li>
-            <li><a href="//twitter.com/">TW</a></li>
-            <li><a href="//instagram.com/">INS</a></li>
-            <li><a href="//linkedin.com/">LKD</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright">
-        &copy; 2024 Akinlolu Aluko | Images by Unsplash and by
-        <a href="https://commons.wikimedia.org/w/index.php?curid=97342152"
-          >Eukoha - Own work, CC BY-SA 4.0</a
-        >, Icons by
-        <a href="https://www.flaticon.com/authors/chanut">Chanut</a>,
-        <a href="https://www.flaticon.com/authors/kiranshastry">Kiranshastry</a
-        >,
-        <a href="https://www.flaticon.com/authors/iconixar" title="iconixar"
-          >iconixar</a
-        >
-        from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
+        <!-- <img src="images/map.png" alt="Map" /> -->
+      </section>
+
+      <section id="copyright">
         <p>
-          Weather Data provided by
-          <a href="https://https://openweathermap.org/">OpenWeatherMap.org</a>
+          &copy; The Scooter Site <br />Images by
+          <a href="https://picsum.photos">Lorem Picsum</a>, Icons made by
+          <a href="https://www.flaticon.com/authors/iconixar" title="iconixar"
+            >iconixar</a
+          >
+          from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
         </p>
-        <p>Last modified <span id="currentDate">202x</span>&nbsp;</p>
-      </div>
+        <p>Akinlolu Aluko | <span id="currentDate">202x</span>&nbsp;</p>
+      </section>
     </footer>
-    <div id="modal" class="modal">
+    <!-- <div id="modal" class="modal">
       <div class="modal-content">
         <span class="close-btn">&times;</span>
         <h2>Welcome!</h2>
         Join us for the <strong>Chamber of Commerce Meet and Greet</strong> on
         <strong>Wednesday at 7:00 p.m.</strong>! <br />Don’t miss it!
-      </div>
-    </div>
+      </div> 
+    </div>-->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/weather.js"></script>

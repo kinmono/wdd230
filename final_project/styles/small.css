@@ -1,0 +1,416 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+main {
+  max-width: 100vw;
+
+  background-color: #fff;
+}
+
+main > picture img,
+#summary > picture img,
+#summaryr > picture img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+main h1 {
+  font-size: 1.5rem;
+}
+
+main h2 {
+  font-size: 1.2rem;
+}
+
+header {
+  background-color: #00b4d8;
+  padding: 1rem 2%;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  background-color: #03466a;
+  border-radius: 5px;
+}
+.nav-links .active {
+  background-color: #0077b6;
+  border-radius: 5px;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  background-color: white;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links.active {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  padding: 20px;
+  z-index: 10;
+}
+
+.hamburger {
+  display: flex;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+  background-color: #caf0f8;
+  padding-top: 1rem;
+}
+
+footer a[href] {
+  color: #00b4d8;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 5%;
+  align-items: center;
+}
+
+#contact a {
+  color: #000000;
+}
+
+#contact p {
+  margin: 10px 0;
+}
+
+#contact div {
+  margin-bottom: 30px;
+}
+
+#contact > iframe {
+  max-width: 350px;
+}
+
+footer div img {
+  max-width: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+footer ul.social {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+#copyright {
+  justify-content: center;
+  background-color: #003755;
+  padding: 2%;
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-align: center;
+}
+/* summary */
+#summary {
+  position: relative;
+  padding: 1rem 2%;
+}
+
+#summaryr {
+  position: relative;
+  padding: 0;
+}
+#summary > table {
+  border: 1px solid rgba(204, 204, 204, 0.241);
+  border-radius: 4px;
+  background-color: #00263a9d;
+  backdrop-filter: blur(2px);
+  padding: 2%;
+  color: white;
+  width: 25ex;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  font-size: 0.8rem;
+}
+
+#desc {
+  text-transform: capitalize;
+}
+
+#summary > table th {
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+#summary > table tr td:first-child {
+  text-align: right;
+}
+
+#summary > table tr td:last-child {
+  color: #ffdf60;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Columbus_electric_scooters.jpg/1200px-Columbus_electric_scooters.jpg")
+    no-repeat center center/cover;
+  color: white;
+  width: 100vw;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 7px 14px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #0077b6;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #0056b3;
+}
+
+.home_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.card {
+  height: 394px;
+  background: linear-gradient(180deg, #202d31, #141516);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  width: 303px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.card_title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card_description {
+  margin-top: 16px;
+  font-size: 15.5px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ccc;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+}
+
+.card_button {
+  right: 28px;
+  bottom: 28px;
+  height: 36px;
+  width: 90px;
+  margin: 20px auto 0;
+  border: 1px solid #0056b3;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: medium;
+  background-color: transparent;
+  transition: background-color 0.7s ease;
+  font-size: 14px;
+}
+.paralax.content {
+  min-height: auto;
+  padding: 1rem;
+}
+
+.card-item {
+  border: 2px solid #0077b6;
+  padding: 2rem;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 0 3px rgba(0, 126, 255, 0.1);
+  outline: none;
+  border-radius: 4px;
+}
+
+.card-item > * {
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+form textarea {
+  height: 10em;
+  width: 100%;
+}
+label {
+  font-weight: bolder;
+}
+
+.button button {
+  padding: 1rem 2rem;
+  margin: 20px 0;
+  padding: 12px 20px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #08c;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.button.inline {
+  display: inline-block;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  border-color: #007eff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 0 3px rgba(0, 126, 255, 0.1);
+  outline: none;
+}
+
+input.error {
+  border-color: red;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.input-feedback {
+  color: red;
+  margin-top: 0.25rem;
+}
+fieldset {
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+input[type="checkbox"] {
+  height: 1rem;
+  width: 1rem;
+  margin-bottom: 0.1rem !important;
+}
+.terms {
+  display: flex;
+  gap: 0.8rem;
+}
+form li {
+  list-style: none;
+}
+#summaryr > h1 {
+  position: absolute;
+  top: 40%;
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0 3px 9px rgba(0, 0, 0, 0.54);
+}
+.reserve > h3 {
+  text-align: center;
+  margin: 2rem 0;
+}
+.reserve h4 {
+  text-align: center;
+  margin-bottom: 2rem;
+}

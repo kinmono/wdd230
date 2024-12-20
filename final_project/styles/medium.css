@@ -1,0 +1,64 @@
+/* Responsive Styles */
+/* @media screen and (max-width: 768px) {
+ 
+} */
+@media only screen and (min-width: 35rem) {
+  /*----------- FOOTER --------------*/
+  #contact {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #contact > div {
+    max-width: 60%;
+  }
+
+  #contact > div > div {
+    display: flex;
+  }
+
+  #contact > div > div > div {
+    margin-right: 30px;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  /* Weather Summary */
+
+  #summary > table {
+    width: 30ex;
+    padding: 2%;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+  }
+
+  .home_card {
+    flex-direction: row;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+  .card-item.map {
+    display: flex;
+    justify-content: center;
+  }
+  .cardr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
