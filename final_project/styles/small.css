@@ -291,7 +291,7 @@ footer ul.social {
   border-radius: 5px;
   cursor: pointer;
   font-weight: medium;
-  background-color: transparent;
+  background-color: #0056b3;
   transition: background-color 0.7s ease;
   font-size: 14px;
 }
