@@ -46,14 +46,16 @@
           <li>
             <a href="/final_project/reservation.html">Reservation</a>
           </li>
-          <li>
-            <a href="/final_project/rentals.html" class="active">Rentals</a>
-          </li>
+          <li><a href="/final_project/rentals.html">Rentals</a></li>
           <li>
             <a href="/final_project/tours.html">Tours</a>
           </li>
-          <li><a href="/final_project/contact.html">Contact</a></li>
+
+          <li>
+            <a href="/final_project/contact.html" class="active">Contact</a>
+          </li>
         </ul>
+
         <div class="hamburger" onclick="toggleMenu()">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -83,22 +85,64 @@
             src="https://img.freepik.com/premium-photo/young-woman-dressed-white-riding-scooter_926199-2218855.jpg"
             alt="Franklin" />
         </picture>
-        <h1>Rentals</h1>
+        <h1>Tours</h1>
       </div>
-      <div class="rent">
-        <div>
-          <h3>Rentals</h3>
-          <div id="rentals" class="rental-container"></div>
+      <div class="reserve">
+        <h3>We are glad to be at your service</h3>
+        <div class="cardr">
+          <div class="card-item">
+            <form id="application" action="confirm.html" method="get">
+              <h4>Send us a Mail</h4>
+              <fieldset>
+                <legend>Personal Details</legend>
+                <label for="fname">Name</label>
+                <input
+                  name="name"
+                  id="fname"
+                  placeholder="Full name"
+                  required
+                  autocomplete="name" />
+
+                <label for="frmEmailA">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="frmEmailA"
+                  placeholder="from@somewhere.com"
+                  autocomplete="email"
+                  required />
+
+                <label for="Request">Special Request/Comments:</label>
+                <textarea id="Request" name="Request"></textarea>
+              </fieldset>
+
+              <button type="submit" class="button">Send Your Email</button>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="paralax"></div>
-      <div class="table">
-        <div>
-          <h3>At a Glance</h3>
-          <div id="rentalTable" class="card-table"></div>
+      <div class="locate">
+        <div class="map_locate">
+          <p><strong>~Scoots: Quintana Roo</strong><br /></p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.2208618413019!2d-86.95009497078742!3d20.511003655227984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cee123b051%3A0xade22f7c23f964b7!2sAv%20Lic%20Benito%20Ju%C3%A1rez%205%2C%20Centro%2C%2077600%20San%20Miguel%20de%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1608219464651!5m2!1sen!2sus"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+        <div class="map_locate">
+          <p><strong>~Scoots: San Miguel</strong></p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d555.6154299971008!2d-86.97348733793908!3d20.476682707165544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748a503f14b%3A0x702c665a071b27db!2zMjDCsDI4JzM1LjUiTiA4NsKwNTgnMjIuMyJX!5e0!3m2!1sen!2sus!4v1608220054782!5m2!1sen!2sus"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"></iframe>
         </div>
       </div>
-      <div class="paralax"></div>
     </main>
     <footer>
       <section id="contact">

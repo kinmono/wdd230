@@ -96,4 +96,7 @@
     border-radius: 6px;
     min-height: 700px;
   }
+  .locate {
+    flex-direction: row;
+  }
 }
