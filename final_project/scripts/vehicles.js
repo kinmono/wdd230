@@ -217,7 +217,7 @@ function rentalServices() {
             "&nbsp;".repeat(2) +
             "Full Day Rental w/Reservation</sub>";
 
-          aBtn.href = "reservations.html?type=" + vehicles[i].model[ii].type;
+          aBtn.href = "reservation.html?type=" + vehicles[i].model[ii].type;
           aBtn.textContent = "Reserve " + vehicles[i].model[ii].type;
 
           divBtn.append(aBtn);
